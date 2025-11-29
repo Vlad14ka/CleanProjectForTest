@@ -9,6 +9,7 @@ import pages.BasePage;
 import pages.FlightSelectionPage;
 import pages.HomePage;
 import utilities.ConfigReader;
+import utilities.DateUtils;
 
 public class AirCanadaBookingTest extends TestBase {
 
@@ -34,11 +35,12 @@ public class AirCanadaBookingTest extends TestBase {
 
 
         homePage.clickElement(HomePage.inputFirstDate);
-        homePage.sendKeys(HomePage.inputFirstDate,"20/11/2025");
+        homePage.sendKeys(HomePage.inputFirstDate, DateUtils.getDate(6,0));
+
 
 
         homePage.clickElement(HomePage.inputSecondDate);
-        homePage.sendKeys(HomePage.inputSecondDate,"27/11/2025");
+        homePage.sendKeys(HomePage.inputSecondDate,DateUtils.getDate(6,11));
 
 
         homePage.clickElement(HomePage.confirmDatesButton);

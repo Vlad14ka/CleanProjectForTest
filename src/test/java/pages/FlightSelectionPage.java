@@ -14,8 +14,4 @@ public class FlightSelectionPage extends BasePage {
             "//button[.//span[contains(text(), 'Économique') or contains(text(), 'Economy')]]"
     );
 
-
-    // --- Методы ---
-
-
 }
